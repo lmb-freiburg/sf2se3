@@ -1,0 +1,16 @@
+[defaults]
+# Dataset options
+setup-datasets-dir: /media/driveD/datasets
+
+setup-results-dir: /media/driveD/sflow2rigid3d/results
+#  /misc/lmbraid19/datasets  |  /misc/lmbraid21/sommerl/datasets  |   /misc/lmbraid21/schroepp/datasets/orig/FlyingThings3D
+
+setup-wandb-log: False
+setup-wandb-entity: limpbot
+setup-wandb-project: drosflow
+
+# optional: specify different parent for models than working directory
+# parent-runs-dir: /media/driveD/models
+setup-dataloader-num-workers: 0
+
+#setup-dataloader-device: cpu

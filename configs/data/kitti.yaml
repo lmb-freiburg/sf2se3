@@ -1,0 +1,15 @@
+[defaults]
+
+data-dataset-tags: kitti-train # kitti-train kitti-test
+
+data-res-width: 1242  # 1241  1242  960  1248  960
+data-res-height: 375  #  376   375  540   384  576
+data-baseline:  0.54 # 0.5334  0.5326  0.5326
+
+data-dataset-subdir: KITTI_flow/training # KITTI_flow/training KITTI_flow/testing
+
+data-dataset-index-shift: 0 # 173 14 24 32 45 58 67 92 97 146 190  13, 29 36, #77  # 22 24 28 73 77
+# 58 6x 80
+#data-dataset-max-num-imgs: 4
+
+data-fps: 10

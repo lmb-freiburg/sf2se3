@@ -1,0 +1,35 @@
+[defaults]
+
+data-dataset-tags: flyingthings3d-test
+data-dataset-directory-structure: SEQ-DATA
+data-dataset-directory-structure-seq-depth: 2
+data-dataset-subdir: FlyingThings3D/seq_data/TEST
+
+data-res-width: 960
+data-res-height: 540
+data-baseline: 1.0
+
+data-cam-fx: 1050.0
+data-cam-fy: 1050.0
+data-cam-cx: 479.5
+data-cam-cy: 269.5
+
+#data-dataset-transfs-fpath-rel: camera_data/TEST
+
+data-dataset-label-subdir: object_index_left
+
+data-dataset-oflow-subdir: optical_flow_into_future_left
+
+data-dataset-disp-subdir: disparity_left
+
+data-dataset-rgb-left-subdir: frames_cleanpass_left
+data-dataset-rgb-right-subdir: frames_cleanpass_right
+
+data-dataset-index-shift: 0
+
+#data-seqs-dirs-filter-tags: ['A/0001']
+
+data-meta-use: False
+data-meta-recalc: False
+
+data-fps: 1

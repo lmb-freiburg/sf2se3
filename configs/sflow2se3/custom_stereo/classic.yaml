@@ -1,0 +1,17 @@
+[defaults]
+
+# sflow options
+sflow2se3-disp-net-archictecture: leaststereo # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: sceneflow # kitti sceneflow
+sflow2se3-raft-train-dataset: flyingthings3d # sintel kitti flyingthings3d
+
+sflow2se3-depth-min: 0.01 # 0.01
+sflow2se3-depth-max: 1000.
+
+sflow2se3-model-euclidean-nn-pts-count-max: 450 # 550
+
+sflow2se3-extraction-cluster-types: ["rigid"] #, "eucl-oflow"] # ["rigid", "eucl", "eucl-oflow"]
+
+#sflow2se3-model-euclidean-nn-connect-global-dist-range-ratio-max: 10000.35
+#sflow2se3-model-euclidean-nn-connect-global-dist-range-ratio-max: 0. # 0.35

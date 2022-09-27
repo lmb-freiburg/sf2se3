@@ -1,0 +1,19 @@
+[defaults]
+
+# sflow options
+sflow2se3-sflow-use-depth-if-available: True
+sflow2se3-sflow-use-oflow-if-available: False
+
+sflow2se3-disp-net-archictecture: raft # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: sceneflow # kitti sceneflow
+sflow2se3-raft-train-dataset: flyingthings3d # sintel kitti flyingthings3d
+
+sflow2se3-depth-min: 0.01
+sflow2se3-depth-max: 15.
+
+# approach options
+sflow2se3-raft3d-train-dataset: flyingthings3d # flyingthings3d kitti
+sflow2se3-raft3d-architecture-bilaplacian: True
+
+sflow2se3-depth-complete-invalid: False

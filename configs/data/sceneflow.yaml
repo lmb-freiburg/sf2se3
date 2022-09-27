@@ -1,0 +1,38 @@
+[defaults]
+
+data-dataset-tags: sceneflow-test
+data-dataset-directory-structure: BROX
+
+data-res-width: 960
+data-res-height: 540
+data-baseline: 1.0
+
+data-cam-fx: 1050.0
+data-cam-fy: 1050.0
+data-cam-cx: 479.5
+data-cam-cy: 269.5
+
+#data-dataset-subdir: Brox_FlyingThings3D_part/train
+#data-dataset-subdir: Brox_FlyingThings_DispNet/val
+# FlyingThings3D/raw  | FlyingThings3D/dispnet_seq/train
+data-dataset-subdir: Brox_SceneFlow/full
+
+data-dataset-transfs-fpath-rel: camera_data/TEST
+
+data-dataset-label-subdir: object_index/TEST
+# disparity/TRAIN/A  |  object_ids
+
+data-dataset-oflow-subdir: optical_flow/TEST
+# optical_flow/TRAIN/A  |  flow
+#data-dataset-oflow-occ-subdir: flow_occlusions
+
+data-dataset-disp-subdir: disparity/TEST
+# disparity/TRAIN/A  |  disparity
+#data-dataset-disp-occ-subdir: disparity_occlusions
+
+data-dataset-rgb-subdir: frames_finalpass/TEST
+data-dataset-rgb-left-subdir: frames_finalpass/TEST
+data-dataset-rgb-right-subdir: frames_finalpass/TEST
+# frames_cleanpass/TRAIN/A  |  image_clean
+
+data-fps: 1

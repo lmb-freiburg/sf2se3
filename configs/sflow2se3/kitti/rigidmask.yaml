@@ -1,0 +1,16 @@
+[defaults]
+
+# sflow
+sflow2se3-depth-min: 0.01
+sflow2se3-depth-max: 80.
+
+sflow2se3-disp-net-archictecture: leaststereo # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: kitti # kitti sceneflow
+sflow2se3-raft-train-dataset: kitti # sintel kitti flyingthings3d
+
+# approach options
+sflow2se3-rigidmask-train-dataset: kitti # sceneflow kitti
+
+sflow2se3-disp-occl-source: fwdbwd+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp
+sflow2se3-oflow-occl-source: fwdbwd+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp

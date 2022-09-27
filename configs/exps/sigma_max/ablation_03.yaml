@@ -1,0 +1,4 @@
+[defaults]
+
+# default 15. # 2, 5, 6, 8, 10, 12, 15, 20, 25, 35, 50
+sflow2se3-oflow-disp-std-abs-max: 6.

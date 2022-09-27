@@ -1,0 +1,5 @@
+[defaults]
+
+# default 30
+# ablation: 1, 3, 5, 10, 15, 20, 30, 45, 60
+sflow2se3-rigid-clustering-repetitions: 45

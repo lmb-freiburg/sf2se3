@@ -1,0 +1,8 @@
+
+Sintel:
+    adaption:
+        MPI-Sintel/MPI-Sintel-oflow/training/invalid/ambush_2/frame_0022.png
+        -> MPI-Sintel/MPI-Sintel-oflow/training/invalid/ambush_2/frame_0021.png
+    reason:
+        - no extra sequence created for single img
+
