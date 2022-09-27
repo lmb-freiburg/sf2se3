@@ -1,0 +1,14 @@
+[submodule "third_party/opencv"]
+	path = third_party/opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "third_party/opencv_contrib"]
+	path = third_party/opencv_contrib
+	url = git@github.com:opencv/opencv_contrib.git
+[submodule "third_party/rigidmask"]
+	path = third_party/rigidmask
+	url = git@github.com:limpbot/rigidmask.git
+[submodule "third_party/RAFT-3D"]
+	path = third_party/RAFT3D
+	url = git@github.com:limpbot/RAFT-3D.git
+	branch = master
+	update = merge

@@ -1,0 +1,39 @@
+[defaults]
+
+# sflow
+sflow2se3-depth-min: 0.01 # 0.01
+sflow2se3-depth-max: 40. # 80
+
+sflow2se3-disp-net-archictecture: leaststereo # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: kitti # kitti sceneflow
+sflow2se3-raft-train-dataset: kitti # sintel kitti flyingthings3d
+
+# approach
+sflow2se3-downscale-factor: 0.06
+sflow2se3-pt3d-valid-req-pxl-lower-than: 0.65 # 0.7
+
+sflow2se3-disp-occl-source: fwdbwd #+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp
+sflow2se3-oflow-occl-source: fwdbwd+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp
+
+#sflow2se3-rigid-dist-dev-max: 0.02 #0.03 #0.05 # 0.05 # Kitti 0.03
+
+#sflow2se3-model-euclidean-nn-rel-depth-dev-std: 0.05 #0.15 # 0.13
+#sflow2se3-model-euclidean-nn-uv-dev-rel-to-width-std: 0.10 #0.10 # 0.12
+
+sflow2se3-extraction-cluster-types: ["rigid", "eucl-oflow"] # ["rigid", "eucl", "eucl-oflow"]
+
+sflow2se3-oflow-disp-std-abs-min: 2.0 # 1.5
+sflow2se3-oflow-disp-std-abs-max: 10 # 6
+#sflow2se3-se3filter-prob-gain-min: 3
+
+#sflow2se3-model-euclidean-nn-uv-dev-rel-to-width-std: 0.10
+
+#sflow2se3-extraction-refinement-cycles: 1 # 2
+#sflow2se3-refinements-per-extraction: 1 # 5
+
+#sflow2se3-model-euclidean-nn-rel-depth-dev-std: 0.10 #0.15 # 0.13
+sflow2se3-model-euclidean-nn-uv-dev-rel-to-width-std: 0.05 #0.10 # 0.12
+#sflow2se3-model-euclidean-nn-connect-global-dist-range-ratio-max: 0.
+sflow2se3-se3filter-prob-gain-min: 0.0015 #5
+sflow2se3-se3filter-prob-same-mask-max:  0.15 # 0.1

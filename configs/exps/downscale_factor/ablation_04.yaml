@@ -1,0 +1,4 @@
+[defaults]
+
+# default 0.05
+sflow2se3-downscale-factor: 0.05

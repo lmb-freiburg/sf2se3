@@ -1,0 +1,20 @@
+,,,,,
+,Kitti,SceneFlow,Sintel,Bonn,TUM
+,,,,,
+rgb_left,x,x,x,x,x
+rgb_right,x,x,x,,
+disp,x,x,x,,
+disp_valid,x,,,,
+disp occ,"(x, ni)",,x,,
+depth,,,,x,x
+depth valid,,,,x,x
+intrinsics,x,x,x,x,x
+baseline,x,x,x,,
+oflow,x,x,x,,
+oflow valid,x,,x,,
+oflow occ,"(x, ni)",x,x,,
+objects labels,x,,,,
+ego pose,,"(x, ni)","(x, ni)",x,x
+ego motion,x (sg),"(x, ni)","(x, ni)",x,x
+objects poses,,"(x, ni)",,,
+bg label,x,"(x, ni)","(x, ni)",,

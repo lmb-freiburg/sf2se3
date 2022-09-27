@@ -1,0 +1,32 @@
+[defaults]
+# Dataset options
+setup-datasets-dir: /misc/lmbraid21/sommerl/datasets
+setup-results-dir: /misc/lmbraid21/sommerl/results
+
+setup-wandb-log: True
+setup-wandb-entity: limpbot
+setup-wandb-project: drosflow
+
+#  /misc/lmbraid19/datasets  |  /misc/lmbraid21/sommerl/datasets  |   /misc/lmbraid21/schroepp/datasets/orig/FlyingThings3D
+
+#setup-dataset-subdir: FlyingThings3D/dispnet_seq/train
+# FlyingThings3D/raw  | FlyingThings3D/dispnet_seq/train
+
+#setup-dataset-transfs-fpath-rel: camera_data.txt
+
+#setup-dataset-label-subdir: object_ids
+# disparity/TRAIN/A  |  object_ids
+
+#setup-dataset-oflow-subdir: flow
+# optical_flow/TRAIN/A  |  flow
+
+#setup-dataset-disp-subdir: disparity
+# disparity/TRAIN/A  |  disparity
+
+#setup-dataset-rgb-subdir: image_clean
+# frames_cleanpass/TRAIN/A  |  image_clean
+
+# optional: specify different parent for models than working directory
+# parent-runs-dir: /media/driveD/models
+
+setup-dataloader-num-workers: 0

@@ -1,0 +1,5 @@
+[defaults]
+
+# default 0.35 # 0.00 0.05 0.10 0.20 0.35 0.50, 0.65, 0.80, 1.00, 2.00
+
+sflow2se3-model-euclidean-nn-connect-global-dist-range-ratio-max: 2.00

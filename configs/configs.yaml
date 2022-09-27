@@ -1,0 +1,29 @@
+[defaults]
+
+config-setup: configs/setup/tower_2080ti.yaml
+#config-setup: configs/setup/cluster_cs.yaml
+
+config-eval: configs/eval.yaml
+
+#config-data: configs/data/remote_rgbd.yaml
+#config-data: configs/data/kitti.yaml
+#config-data: configs/data/flyingthings3d_dispnet.yaml
+#config-data: configs/data/flyingthings3d_dispnet_ablation.yaml
+#config-data: configs/data/sintel.yaml
+#config-data: configs/data/bonn_rgbd.yaml
+#config-data: configs/data/custom_rgbd.yaml
+config-data: configs/data/custom_stereo.yaml
+#config-data: configs/data/tum_rgbd_fr3.yaml
+
+
+config-sflow2se3: configs/sflow2se3/classic.yaml
+
+#config-sflow2se3-data-dependent: configs/sflow2se3/remote_rgbd/classic.yaml
+config-sflow2se3-data-dependent: configs/sflow2se3/kitti/classic.yaml
+#config-sflow2se3-data-dependent: configs/sflow2se3/flyingthings3d_dispnet/classic.yaml
+#config-sflow2se3-data-dependent: configs/sflow2se3/flyingthings3d_dispnet_ablation/classic.yaml
+#config-sflow2se3-data-dependent: configs/sflow2se3/sintel/classic.yaml
+#config-sflow2se3-data-dependent: configs/sflow2se3/bonn_rgbd/classic.yaml
+#config-sflow2se3-data-dependent: configs/sflow2se3/tum_rgbd_fr3/classic.yaml
+
+config-ablation: configs/ablation.yaml

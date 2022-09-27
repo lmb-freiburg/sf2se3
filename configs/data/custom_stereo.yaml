@@ -1,0 +1,46 @@
+[defaults]
+
+data-dataset-tags: custom_stereo
+data-dataset-directory-structure: SEQ-DATA
+data-dataset-directory-structure-seq-depth: 1
+data-dataset-subdir: Custom_Stereo
+
+#data-res-width: 960
+#data-res-height: 540
+#data-baseline: 1.0
+data-res-width: 1242  # 1241  1242  960  1248  960
+data-res-height: 375  #  376   375  540   384  576
+data-baseline: 0.54
+
+#data-cam-fx: 1050.0
+#data-cam-fy: 1050.0
+#data-cam-cx: 479.5
+#data-cam-cy: 269.5
+data-cam-fx: 721.5
+data-cam-fy: 721.5
+data-cam-cx: 609.6
+data-cam-cy: 172.9
+
+#data-dataset-transfs-fpath-rel: camera_data/TEST
+
+#data-dataset-label-subdir: object_ids_left
+
+#data-dataset-oflow-subdir: optical_flow_left_into_future
+#data-dataset-oflow-occ-subdir: optical_flow_occlusions_left_into_future
+
+#data-dataset-disp-subdir: disparity_left
+#data-dataset-disp-occ-subdir: disparity_occlusions_left
+
+data-dataset-rgb-left-subdir: rgb_clean_left #left
+data-dataset-rgb-right-subdir: rgb_clean_right #right
+
+data-dataset-index-shift: 0
+
+# for ablation these are sufficient
+#data-seqs-dirs-filter-tags: ['A/0000', 'A/0001', 'A/0002', 'B/0000', 'B/0001', 'B/0002', 'C/0000', 'C/0001', 'C/0002']
+#data-seqs-dirs-filter-tags: ['A/0000']
+
+data-meta-use: False
+data-meta-recalc: False
+
+data-fps: 1

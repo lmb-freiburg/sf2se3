@@ -1,0 +1,43 @@
+[defaults]
+
+data-dataset-tags: sintel-train
+
+data-res-width: 1024  # 1241  1242  960  1248  960
+data-res-height: 436  #  376   375  540   384  576
+data-baseline:  0.10 # 0.5334  0.5326  0.5326
+
+data-dataset-subdir: MPI-Sintel
+
+data-dataset-index-shift: 0 # 14 24 32 45 58 67 92 97 146 190  13, 29 36, #77  # 22 24 28 73 77
+# 58 6x 80
+#data-dataset-max-num-imgs: 4
+
+data-dataset-transfs-fpath-rel: camera_data.txt
+
+data-dataset-label-subdir: object_ids
+# disparity/TRAIN/A  |  object_ids
+
+data-dataset-oflow-subdir: MPI-Sintel-oflow/training/flow
+# optical_flow/TRAIN/A  |  flow
+data-dataset-oflow-occ-subdir: MPI-Sintel-oflow/training/occlusions
+data-dataset-oflow-invalid-subdir: MPI-Sintel-oflow/training/invalid
+
+data-dataset-disp-subdir: MPI-Sintel-disp/training/disparities
+# disparity/TRAIN/A  |  disparity
+data-dataset-disp-occ-subdir: MPI-Sintel-disp/training/occlusions
+data-dataset-disp-oof-subdir: MPI-Sintel-disp/training/outofframe
+
+data-dataset-rgb-left-subdir: MPI-Sintel-disp/training/clean_left
+data-dataset-rgb-right-subdir: MPI-Sintel-disp/training/clean_right
+# frames_cleanpass/TRAIN/A  |  image_clean
+
+data-dataset-depth-subdir: MPI-Sintel-depth/training/depth
+
+#data-seqs-dirs-filter-tags: ['mountain_1'] #  mountain_1 ambush_7
+
+data-dataset-camera-subdir: MPI-Sintel-depth/training/camdata_left
+
+data-fps: 24
+
+data-meta-use: False
+data-meta-recalc: False

@@ -1,0 +1,33 @@
+[defaults]
+
+data-dataset-tags: tum_rgbd-fr2
+
+data-dataset-subdir: TUM_RGBD/fr2
+
+data-res-width: 640
+data-res-height: 480
+data-baseline: 0.1
+
+# Freiburg 2
+data-cam-fx: 520.9
+data-cam-fy: 521.0
+data-cam-cx: 325.1
+data-cam-cy: 249.7
+data-cam-d0: 0.2312
+data-cam-d1: -0.7849
+data-cam-d2: -0.0033
+data-cam-d3: -0.0001
+data-cam-d4: 0.9172
+
+data-dataset-rgb-subdir: rgb
+data-dataset-depth-subdir: depth
+
+data-dataset-directory-structure: SEQ-DATA
+
+data-fps: 10
+data-timestamp-inter-data-max-diff: 0.02
+
+data-dataset-index-shift: 0 # 400 interesting
+
+data-seqs-dirs-filter-tags: ['rgbd_dataset_freiburg2_desk_with_person']
+# desk_with_person total: 1122,  interesting 400-1122

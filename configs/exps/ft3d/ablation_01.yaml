@@ -1,0 +1,6 @@
+[defaults]
+
+# default 1
+# ablation: 0, 1, 2, 3, 4, 5
+sflow2se3-extraction-refinement-cycles: 2 # 2
+sflow2se3-refinements-per-extraction: 5 # 5

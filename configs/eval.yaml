@@ -1,0 +1,54 @@
+[defaults]
+
+eval-live: False
+eval-remote-frame-encode: True # True | False
+eval-remote-frame-width: 640
+eval-remote-frame-height: 480
+
+eval-visualize-paper: False
+
+eval-sflow2se3-visualize-pt3d-pair-valid: False
+sflow2se3-visualize-mask-se3-progression: False
+eval-sflow2se3-visualize-extr-se3-extr: False
+#eval-sflow2se3-visualize-extr-se3-extr-fit: False
+eval-sflow2se3-visualize-extr-se3-extr-sparse: False
+eval-sflow2se3-visualize-extr-se3-extr-selected: False
+eval-sflow2se3-visualize-extr-se3-extr-fused: False
+
+eval-sflow2se3-visualize-extr-geo-added: False
+eval-sflow2se3-visualize-extr-objs-splitted: False
+eval-sflow2se3-visualize-extr-objs-fused: False
+eval-sflow2se3-visualize-extr-objs-selected: False
+
+eval-sflow2se3-visualize-ref-se3-assign: False
+eval-sflow2se3-visualize-ref-se3-updated: False
+eval-sflow2se3-visualize-ref-geo-assign: False
+eval-sflow2se3-visualize-ref-geo-updated: False
+eval-sflow2se3-visualize-ref-objs-selected: False
+
+eval-visualize-dataset: False
+eval-visualize-pred-sflow: False
+eval-visualize-pred-se3: False
+eval-visualize-result: False
+
+eval-visualize-width-max: 1920
+eval-visualize-height-max: 1080
+
+eval-visualization-keys: ['sflow_objs_labels_contours_se3', 'objs_labels_contours_se3', 'kitti']
+#eval-visualization-keys: ['outlier', 'sflow_objs_labels_contours_gt_vs_se3', 'objs_labels_contours_gt_vs_se3', 'kitti']
+#eval-visualization-keys: ['objs_labels_gt_vs_se3', 'outlier']
+# 'objs_labels_gt_vs_se3+outlier'
+#'objs_labels_se3', 'objs_labels_gt'
+#'objs_labels_gt_vs_se3', 'oflow_sflow_vs_se3', 'oflow_gt_vs_se3', 'oflow_outlier', 'outlier', 'objs_labels_gt_vs_se3+outlier'
+#'disp_0_outlier', 'disp_f0_1_outlier', 'sflow'
+# disp_0_sflow, disp_f0_1_sflow, disp_0_se3, disp_f0_1_se3, 'disp_0_gt_vs_sflow'
+# oflow_bwd_sflow, oflow_sflow
+# 'rgb_to_sflow_overview'
+# 'kitti'
+# 'objs_labels_orig_vs_gt'
+# objs_labels_contours_se3
+# sflow_objs_labels_contours_se3
+# 'objs_labels_se3', 'sflow_objs_labels_contours_se3'
+
+# sflow_objs_labels_contours_se3, sflow_sflow, oflow_sflow, disp_0_sflow, disp_f0_1_sflow, disp_0_sflow
+#'sflow_objs_labels_contours_se3', 'sflow_sflow', 'oflow_sflow', 'disp_0_sflow', 'disp_1_sflow'

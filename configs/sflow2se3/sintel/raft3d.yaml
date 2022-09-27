@@ -1,0 +1,15 @@
+[defaults]
+
+# sflow options
+
+sflow2se3-disp-net-archictecture: leaststereo # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: sceneflow # kitti sceneflow
+sflow2se3-raft-train-dataset: sintel # sintel kitti flyingthings3d
+
+sflow2se3-depth-min: 0.01
+sflow2se3-depth-max: 200. # mountains require up to 10.000m depth, but disparity is > 0.5 (0.5:112, 1.0:224)
+
+# approach options
+sflow2se3-raft3d-train-dataset: flyingthings3d # flyingthings3d kitti
+sflow2se3-raft3d-architecture-bilaplacian: True

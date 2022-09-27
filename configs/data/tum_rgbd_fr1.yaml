@@ -1,0 +1,32 @@
+[defaults]
+
+
+data-dataset-tags: tum_rgbd-fr1
+
+data-dataset-subdir: TUM_RGBD/fr1
+
+data-res-width: 640
+data-res-height: 480
+data-baseline: 0.1
+
+# Freiburg 1
+data-cam-fx: 517.3
+data-cam-fy: 516.5
+data-cam-cx: 318.6
+data-cam-cy: 255.3
+data-cam-d0: 0.2624
+data-cam-d1: -0.9531
+data-cam-d2: -0.0054
+data-cam-d3: 0.0026
+data-cam-d4: 1.1633
+
+
+data-dataset-rgb-subdir: rgb
+data-dataset-depth-subdir: depth
+
+data-dataset-directory-structure: SEQ-DATA
+
+data-fps: 10
+data-timestamp-inter-data-max-diff: 0.02
+
+data-seqs-dirs-filter-tags: ['xyz']

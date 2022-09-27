@@ -1,0 +1,79 @@
+[defaults]
+
+#sflow2se3-disp
+sflow2se3-visualize-mask-se3-progression: False
+
+sflow2se3-visualize-dataset: False
+sflow2se3-visualize-pred-sflow: False
+sflow2se3-visualize-pred-se3: False
+sflow2se3-visualize-result: True
+
+sflow2se3-visualize-mask-completion-progression: False
+
+sflow2se3-downscale-factor: 0.05
+sflow2se3-downscale-mode: nearest_v2
+sflow2se3-depth-min: 0.01 # 0.01
+sflow2se3-depth-max: 80.  # 80 -> 200
+
+sflow2se3-disp-fwdbwd-dev-max: 1.5 # 1
+sflow2se3-disp-fwdbwd-dev-rel-max: 0.025 #0.05
+sflow2se3-oflow-fwdbwd-dev-max: 1.5 #1.5
+sflow2se3-oflow-fwdbwd-dev-rel-max: 0.025 #1.5
+sflow2se3-occl-warp-dssim-max: 0.3
+
+sflow2se3-min-samples: 2
+sflow2se3-rigid-dist-dev-max: 0.03 #0.03 #0.05 # 0.05 # Kitti 0.03
+sflow2se3-rigid-dist-dev-rel-max: 0.0 #0.02 # Kitti: 0.01
+sflow2se3-rigid-dist-max: 999999.0  # 10.0
+sflow2se3-rigid-dist-min: -0.05 # 0.1
+sflow2se3-rigid-clustering-method: accumulation # accumulation | agglomerative | pairs
+sflow2se3-rigid-clustering-accumulation-max-samples: 5 # 5
+sflow2se3-rigid-clustering-accumulation-use-range: False
+#sflow2se3-rigid-clustering-accumulation-linkage: complete
+
+sflow2se3-rigid-clustering-agglomerative-linkage: average # complete average
+sflow2se3-rigid-clustering-agglomerative-max-dist: 0.2 #
+#sflow2se3-se3fit-dist-dev-max: 0.1 #2 #0.3
+#sflow2se3-se3fit-dist-dev-rel-max: 0.
+
+sflow2se3-model-se3-fit-use-oflow: False
+
+sflow2se3-model-se3-likelihood-use-oflow: True
+sflow2se3-model-se3-likelihood-oflow-invalid-pairs: 0. # -1. | 0. | 1.
+sflow2se3-model-se3-likelihood-oflow-abs-std: 1.5 #1.5 #3
+sflow2se3-model-se3-likelihood-oflow-rel-std: 0.055 #0.025 # 0.05
+
+sflow2se3-model-se3-likelihood-use-disp: True
+sflow2se3-model-se3-likelihood-disp-invalid-pairs: 1. # -1. | 0. | 1.
+sflow2se3-model-se3-likelihood-disp-abs-std: 1.5 #3
+sflow2se3-model-se3-likelihood-disp-rel-std: 0.055 # 0.05
+
+sflow2se3-model-se3-likelihood-use-sflow: False
+sflow2se3-model-se3-likelihood-sflow-invalid-pairs: 1.   # -1. | 0. | 1.
+sflow2se3-model-se3-likelihood-sflow-abs-std: 1.0
+sflow2se3-model-se3-likelihood-sflow-rel-std: 0.05
+
+sflow2se3-model-euclidean-nn-dist-std: 1.
+
+sflow2se3-labels-source-argmax: prior*likelihood # prior*inlier | prior*likelihood | likelihood
+
+sflow2se3-split2filter2fuse-nn-dist-max: 3.0
+sflow2se3-split2filter2fuse-apply: True
+
+sflow2se3-apply-triangulation: False
+
+sflow2se3-se3filter-prob-gain-min: 3 #5
+sflow2se3-se3filter-prob-same-mask-max: 0.1
+
+sflow2se3-sim-dist-max: 0.01 #0.2 # 0.1 for sep 0.8
+sflow2se3-sim-angle-max: 0.5   # 5 for sep 15
+
+sflow2se3-mask-recall-max: 1.0
+
+sflow2se3-disp-net-archictecture: raft # leaststereo raft
+
+sflow2se3-leaststereo-train-dataset: sceneflow # kitti sceneflow
+sflow2se3-raft-train-dataset: flyingthings3d # sintel kitti flyingthings3d
+
+sflow2se3-disp-occl-source: fwdbwd+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp
+sflow2se3-oflow-occl-source: fwdbwd+warp # warp fwdbwd fwdbwd+warp fwdbwd*warp

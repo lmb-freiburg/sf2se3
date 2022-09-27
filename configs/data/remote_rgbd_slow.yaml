@@ -1,0 +1,40 @@
+[defaults]
+
+data-dataset-tags: remote_rgbd
+
+#data-dataset-subdir: Bonn_RGBD
+
+data-res-width: 640
+data-res-height: 480
+data-baseline: 0.1
+
+data-cam-fx: 616.583 # 384.198
+data-cam-fy: 617.120 # 384.198
+data-cam-cx: 318.688 # 322.159
+data-cam-cy: 238.521 # 245.709
+data-cam-d0: 0.
+data-cam-d1: 0.
+data-cam-d2: 0.
+data-cam-d3: 0.
+data-cam-d4: 0.
+data-cam-depth-scale: 0.0010000000474974513
+
+#data-cam-d0: 0.0
+#data-cam-d1: 0.0
+#data-cam-d2: 0.0
+#data-cam-d3: 0.0
+#data-cam-d4: 0.0
+
+data-dataset-rgb-subdir: rgb
+data-dataset-depth-subdir: depth
+
+data-dataset-directory-structure: SEQ-DATA
+data-dataset-directory-structure-seq-depth: 1
+
+data-fps: 10
+data-timestamp-inter-data-max-diff: 0.02
+
+# data-seqs-dirs-filter-tags: ['balloon'] # 'static'(580) 'balloon' (145) 'sync' (118) 'crowd' (308)
+# 'balloon_tracking' (195)
+
+data-dataset-index-shift: 0

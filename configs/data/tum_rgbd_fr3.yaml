@@ -1,0 +1,40 @@
+[defaults]
+
+data-dataset-tags: tum_rgbd-fr3
+
+data-dataset-subdir: TUM_RGBD/fr3
+
+data-res-width: 640
+data-res-height: 480
+data-baseline: 0.1
+
+# Freiburg 3
+data-cam-fx: 535.4
+data-cam-fy: 539.2
+data-cam-cx: 320.1
+data-cam-cy: 247.6
+data-cam-d0: 0.0
+data-cam-d1: 0.0
+data-cam-d2: 0.0
+data-cam-d3: 0.0
+data-cam-d4: 0.0
+
+data-dataset-rgb-subdir: rgb
+data-dataset-depth-subdir: depth
+
+data-dataset-directory-structure: SEQ-DATA
+
+#data-dataset-index-shift: 0
+
+data-fps: 10
+data-timestamp-inter-data-max-diff: 0.02
+
+#data-seqs-dirs-filter-tags: ['rgbd_dataset_freiburg3_walking_xyz']
+
+data-seqs-dirs-filter-tags: ['rgbd_dataset_freiburg3_sitting_static', 'rgbd_dataset_freiburg3_sitting_xyz',
+                             'rgbd_dataset_freiburg3_sitting_rpy', 'rgbd_dataset_freiburg3_sitting_halfsphere',
+                             'rgbd_dataset_freiburg3_walking_static', 'rgbd_dataset_freiburg3_walking_xyz',
+                             'rgbd_dataset_freiburg3_walking_rpy', 'rgbd_dataset_freiburg3_walking_halfsphere']
+
+data-meta-use: False
+data-meta-recalc: False
