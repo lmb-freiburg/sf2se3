@@ -1,5 +1,8 @@
 # SF2SE3
 
+[SF2SE3: Clustering Scene Flow into
+SE(3)-Motions via Proposal and Selection](https://arxiv.org/pdf/2209.08532.pdf) @ DAGM German Conference on Pattern Recognition 2022.
+
 ## Algorithm
 To understand the algorithm start [here](tensor_operations/retrieval/sflow2se3/proposal_selection.py).
 
