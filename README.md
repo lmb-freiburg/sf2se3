@@ -1,7 +1,16 @@
 # SF2SE3
 
-[SF2SE3: Clustering Scene Flow into
-SE(3)-Motions via Proposal and Selection](https://arxiv.org/pdf/2209.08532.pdf) @ DAGM German Conference on Pattern Recognition 2022.
+## [SF2SE3: Clustering Scene Flow into SE(3)-Motions via Proposal and Selection [GCPR'22]](https://arxiv.org/pdf/2209.08532.pdf)
+
+@inproceedings{sommer2022sf2se3,
+  title={Sf2se3: Clustering scene flow into se (3)-motions via proposal and selection},
+  author={Sommer, Leonhard and Schr{\"o}ppel, Philipp and Brox, Thomas},
+  booktitle={DAGM German Conference on Pattern Recognition},
+  pages={215--229},
+  year={2022},
+  organization={Springer}
+}
+
 
 ## Algorithm
 To understand the algorithm start [here](tensor_operations/retrieval/sflow2se3/proposal_selection.py).
